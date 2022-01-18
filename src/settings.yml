@@ -1,0 +1,120 @@
+#
+# WITAJ W PLIKU KONFIGURACYJNYM PLUG-INU SURVIVAL!
+# Plik został wygenerowany automatycznie dla wersji 2.1.2-C.
+#
+# W przypadku manualnej aktualizacji, koniecznie usuń plik, aby
+# mógł zostać stworzony nowy (obsługujący najnowsza wersje).
+#
+# Przy dokonywaniu zmian zachowaj ostrożność, szczególnie w
+# przypadku zakładki 'internal', gdyż jej nieodpowiednia konfiguracja
+# może doprowadzić do występowania glitchy na serwerze.
+# Po dokonaniu zmian koniecznie zrestartuj serwer!
+#
+# Funkcje ogólne!
+# Chcąc zadbać o wygląd, przejrzystość, liczbę graczy na serwerze, powinieneś
+# zainteresować się tą zakładką!
+
+general:
+
+  # Max-players określa ilu graczy może maksymalnie grać na serwerze.
+  # Server-icon określa nazwę ikony serwera, która musi znajdować się w folderze serwera.
+  # Server-motd wyświetla opis serwera, na liście wyboru serwerów.
+
+  max-players: 40
+  server-icon: "server-icon.png"
+  server-motd: "&f&l✦ &7Wlacz &c&lMINECRAFT 1.18.1 &7i dolacz do nas! &f&l✦ \n&d&lINSTAGRAM &5@realehide &7| &b&lDISCORD &9c66DVjhJba"
+
+# Funkcje, wtyczki i dodatki!
+# Oprócz zbalansowanego i gotowego set-upa serwera typu survival, dodaliśmy również
+# kilka urozmaiceń w postaci dodatków, które z pewnością pokochasz!
+
+function:
+
+  # White-lista jest dodatkiem, który umożliwia grę na serwerze tylko wybranym graczom.
+  # Status (true/false) włącza lub wyłącza funkcję.
+  # Join-notify (true/false) wysyła powiadomienie do wszystkich administratorów, gdy ktoś, kto nie jest na white-liscie, spróbuje wejść na serwer.
+
+  whitelist:
+    status: true
+    join-notify: true
+
+  # Chemistry 3 jest potężnym dodatkiem dodającym chemię, narkotyki na serwer.
+  # Status (true/false) włącza lub wyłącza funkcję.
+
+  chemistry:
+    status: true
+
+  # Ore-Miner pozwala na wydobycie wszystkich rud z jednego złoża natychmiastowo.
+  # Status (true/false) włącza lub wyłącza funkcję.
+
+  ore-miner:
+    status: true
+
+  # Sitting pozwala siadać na krzesłach (schodkach).
+  # Status (true/false) włącza lub wyłącza funkcję.
+  # Height-fix (true/false) blokuje możliwość siadania na krzesłach z wysokości.
+
+  sitting:
+    status: true
+    height-fix: true
+
+  # Plant protection blokuje możliwość niszczenia upraw poprzez skakanie po nich.
+  # Status (true/false) włącza lub wyłącza funkcję.
+
+  plant-protection:
+    status: true
+
+# Efekty wizualne!
+# Wyłączenie niektórych efektów wizualnych może mieć pozytywny wpływ na TPS serwera,
+# ale jesteśmy pewni, ze od razu za nimi zatęsknisz!
+
+visuals:
+
+  # Blood (true/false) to cząsteczki krwi pojawiają sie po zabiciu gracza/moba.
+
+  blood: true
+
+  # Animacja wybuchu TNT.
+  # Status (true/false) włącza lub wyłącza funkcję.
+  # Block-count określa ile bloków ma zostać z-animowanych podczas animacji wybuchu.
+
+  explode:
+    status: true
+    block-count: 8
+
+  # Efekt items (true/false) to hologram wyświetlający sie nad itemkiem.
+  # DamageIndicator (true/false) informuje o zadanych obrażeniach, za pomocą hologramu, podczas PVP/PVE.
+
+  items: true
+  damageIndicator: true
+
+  # Projectiles (true/false) cząsteczki pojawiające sie za wystrzelonym itemkiem (śnieżka, ender perła, strzała...).
+  # Snow (true/false) to efekt chwilowego zamarzania bloków, po trafieniu ich śnieżkom.
+
+  projectiles: true
+  snow: true
+
+  # CritBlind (true/false) uruchamia sie, kiedy gracz otrzyma obrażenia krytyczne, wówczas otrzyma ciekawy efekt ślepoty.
+
+  critBlind: true
+
+
+# Dane wewnętrzne!
+# Ich zmiana może mieć silny wpływ na gameplay, dlatego nie zalecamy ich zmiany
+# jeśli nie jesteś developerem plug-inu!
+
+internal:
+
+  # Hit-delay określa przez ile ticków gracz nie może dostać obrażeń.
+  # Większa liczba (Vanilla - 10) doprowadzi do wydłużenia czasu, kiedy gracz nie może otrzymać żadnych obrażeń,
+  # zaś mniejsza doprowadzi do zmniejszenia bądź nawet wyłączenia blokady hitów podczas PVP/PVE (Tryb Combo).
+
+  hit-delay: 2
+
+  # Hit-reach to podstawowy zasięg bicia dla graczy.
+
+  hit-reach: 2.5
+
+  # Entity-knockback to podstawowy mnożnik odrzutu dla mobów.
+
+  entity-knockback: 0.67
